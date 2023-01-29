@@ -14,7 +14,7 @@
       crossorigin="anonymous"
     ></script>
 
-    <title>Document</title>
+    <title>Sarah Tullebokk</title>
   </head>
   <body>
     <header>
@@ -22,7 +22,7 @@
         class="navbar navbar-dark navbar-expand-md fixed-top justify-content-space-between"
       >
         <div class="container">
-          <a href="#" class="logo navbar-brand">Logo</a>
+          <a href="index.html" class="logo navbar-brand">Logo</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -93,25 +93,33 @@
           </div>
 
           <div class="row my-3 mx-0">
-            <button class="follow-button bg-primary">Follow</button>
+            <a href="login.html" class="follow-button bg-primary text-center"
+              >Follow</a
+            >
           </div>
         </div>
       </section>
 
       <div class="container searchbar-container my-3 p-3">
         <section class="searchbar-wrapper">
-          <div class="searchbar d-flex">
+          <div class="searchbar d-flex justify-content-center">
             <div
               href="profile.html"
               class="image-container d-inline-block .d-none .d-md-block"
             >
-              <img
-                class="searchbar-profile-picture"
-                src="images/Furious.jpg"
-                alt=""
-              />
+              <a href="profile.html">
+                <img
+                  class="searchbar-profile-picture"
+                  src="images/craig-mckay-jmURdhtm7Ng-unsplash.jpg"
+                  alt=""
+                />
+              </a>
             </div>
-            <form action="" method="get" class="align-self-center ms-3">
+            <form
+              action="profile.html"
+              method="get"
+              class="align-self-center ms-3"
+            >
               <textarea
                 name="post"
                 id="post-message"
@@ -123,32 +131,128 @@
             </form>
           </div>
         </section>
-
-        <section class="posts-wrapper">
-          <div class="container"></div>
-        </section>
       </div>
+
+      <section class="posts-wrapper">
+        <div class="container post-wrapper my-3 p-3">
+          <div class="poster-information d-flex align-items-center">
+            <div href="#" class="image-container">
+              <img src="images/face.jpg" alt="" class="profile-picture" />
+            </div>
+            <div class="name-and-date ps-3">
+              <b class="poster-name d-block">Sarah Tullebokk</b>
+              <span class="publish-date d-block secoundary-text-color"
+                >5h ago</span
+              >
+            </div>
+          </div>
+          <div class="post-content pt-3">
+            <p>
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+              erat, sed diam voluptua. At vero eos et accusam et justo duo
+              dolores et ea rebum.
+            </p>
+          </div>
+          <div class="post-interactions row align-items-center text-center">
+            <div class="col-4 post-like">
+              <input
+                type="checkbox"
+                name=""
+                id="post-1-like-check"
+                class="d-none"
+              />
+              <label
+                for="post-1-like-check"
+                class="post-interactions-button d-block"
+              >
+                <i class="fa-solid fa-thumbs-up"></i>
+              </label>
+            </div>
+            <div class="col-4 post-comment">
+              <i
+                class="fa-solid fa-comment-dots post-interactions-button d-block"
+              ></i>
+            </div>
+            <div class="col-4 post-share">
+              <i
+                class="fa-solid fa-share-nodes post-interactions-button d-block"
+              ></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="container post-wrapper my-3 p-3">
+          <div class="poster-information d-flex align-items-center">
+            <div href="#" class="image-container">
+              <img src="images/face.jpg" alt="" class="profile-picture" />
+            </div>
+            <div class="name-and-date ps-3">
+              <b class="poster-name d-block">Sarah Tullebokk</b>
+              <span class="publish-date d-block secoundary-text-color"
+                >2 days ago</span
+              >
+            </div>
+          </div>
+          <div class="post-content pt-3">
+            <p>
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+              erat, sed diam voluptua. At vero eos et accusam et justo duo
+              dolores et ea rebum.
+            </p>
+          </div>
+          <div class="post-interactions row align-items-center text-center">
+            <div class="col-4 post-like">
+              <input
+                type="checkbox"
+                name=""
+                id="post-2-like-check"
+                class="d-none"
+              />
+              <label
+                for="post-2-like-check"
+                class="post-interactions-button d-block"
+              >
+                <i class="fa-solid fa-thumbs-up"></i>
+                <span class="number-of-likes align-items-center">10</span>
+              </label>
+            </div>
+            <div class="col-4 post-comment d-flex justify-content-center">
+              <i
+                class="fa-solid fa-comment-dots post-interactions-button d-block"
+              ></i>
+              <span class="number-of-comments text-center ps-1">100</span>
+            </div>
+            <div class="col-4 post-share">
+              <i
+                class="fa-solid fa-share-nodes post-interactions-button d-block"
+              ></i>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
-    <footer>
-      <nav class="footer-nav">
+    <footer class="fixed-bottom">
+      <nav class="footer-nav d-md-none">
         <div class="container">
-          <div class="col">
+          <div class="col-3 d-block text-center">
             <a href="index.html" class="footer-icon-wrapper d-block">
               <i class="fa-solid fa-house"></i>
             </a>
           </div>
-          <div class="col">
+          <div class="col-3 d-block text-center">
             <a href="#" class="footer-icon-wrapper d-block">
               <i class="fa-solid fa-circle-plus"></i>
             </a>
           </div>
-          <div class="col">
+          <div class="col-3 d-block text-center">
             <a href="#" class="footer-icon-wrapper d-block">
               <i class="fa-solid fa-magnifying-glass"></i>
             </a>
           </div>
-          <div class="col">
+          <div class="col-3 d-block text-center">
             <a href="#" class="footer-icon-wrapper d-block">
               <i class="fa-solid fa-bell nav-icon"></i>
             </a>

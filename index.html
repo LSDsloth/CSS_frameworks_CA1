@@ -9,18 +9,284 @@
       href="node_modules/bootstrap/dist/css/bootstrap.min.css"
     />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/f378410401.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Login</title>
   </head>
   <body>
-    <nav class="navbar">
-      <a class="navbar-brand" href="#">Logo</a>
-    </nav>
-    <main>
-      <div class="container">
-        <div class="row">
-          <div class="col"></div>
+    <header>
+      <nav
+        class="navbar navbar-dark navbar-expand-md fixed-top justify-content-space-between"
+      >
+        <div class="container">
+          <a href="index.html" class="logo navbar-brand">Logo</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mobileMenu"
+            aria-controls="mobileMenu"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mobileMenu">
+            <ul class="navbar-nav text-center">
+              <li>
+                <a href="#" class="nav-link">Home</a>
+              </li>
+              <li>
+                <a href="#" class="nav-link">New post</a>
+              </li>
+              <li>
+                <a href="#" class="nav-link">Profile</a>
+              </li>
+              <li>
+                <a href="#" class="nav-link">Settings</a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="posts-wrapper">
+        <div class="container post-wrapper my-3 p-3">
+          <div class="poster-information d-flex align-items-center">
+            <div href="#" class="image-container">
+              <img src="images/Furious.jpg" alt="" class="profile-picture" />
+            </div>
+            <div class="name-and-date ps-3">
+              <b class="poster-name d-block">Gilbert Grønnås</b>
+              <span class="publish-date d-block secoundary-text-color"
+                >10 days ago</span
+              >
+            </div>
+          </div>
+          <div class="post-content pt-3">
+            <p>
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+              erat, sed diam voluptua. At vero eos et accusam et justo duo
+              dolores et ea rebum.
+            </p>
+          </div>
+          <div class="post-interactions row align-items-center text-center">
+            <div class="col-4 post-like">
+              <input
+                type="checkbox"
+                name=""
+                id="post-2-like-check"
+                class="d-none"
+              />
+              <label
+                for="post-2-like-check"
+                class="post-interactions-button d-block"
+              >
+                <i class="fa-solid fa-thumbs-up"></i>
+                <span class="number-of-likes align-items-center">10</span>
+              </label>
+            </div>
+            <div class="col-4 post-comment d-flex justify-content-center">
+              <i
+                class="fa-solid fa-comment-dots post-interactions-button d-block"
+              ></i>
+              <span class="number-of-comments text-center ps-1">100</span>
+            </div>
+            <div class="col-4 post-share">
+              <i
+                class="fa-solid fa-share-nodes post-interactions-button d-block"
+              ></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="container post-wrapper my-3 p-3">
+          <div class="poster-information d-flex align-items-center">
+            <div href="#" class="image-container">
+              <img
+                src="images/craig-mckay-jmURdhtm7Ng-unsplash.jpg"
+                alt=""
+                class="profile-picture"
+              />
+            </div>
+            <div class="name-and-date ps-3">
+              <b class="poster-name d-block">Karius Baktirius</b>
+              <span class="publish-date d-block secoundary-text-color"
+                >7 weeks ago</span
+              >
+            </div>
+          </div>
+          <div class="post-content pt-3">
+            <p>
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+              erat, sed diam voluptua. At vero eos et accusam et justo duo
+              dolores et ea rebum.
+            </p>
+          </div>
+          <div class="post-interactions row align-items-center text-center">
+            <div class="col-4 post-like">
+              <input
+                type="checkbox"
+                name=""
+                id="post-2-like-check"
+                class="d-none"
+              />
+              <label
+                for="post-2-like-check"
+                class="post-interactions-button d-block"
+              >
+                <i class="fa-solid fa-thumbs-up"></i>
+                <span class="number-of-likes align-items-center">10</span>
+              </label>
+            </div>
+            <div class="col-4 post-comment d-flex justify-content-center">
+              <i
+                class="fa-solid fa-comment-dots post-interactions-button d-block"
+              ></i>
+              <span class="number-of-comments text-center ps-1">100</span>
+            </div>
+            <div class="col-4 post-share">
+              <i
+                class="fa-solid fa-share-nodes post-interactions-button d-block"
+              ></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="container post-wrapper my-3 p-3">
+          <div class="poster-information d-flex align-items-center">
+            <div href="#" class="image-container">
+              <img src="images/Black.jpg" alt="" class="profile-picture" />
+            </div>
+            <div class="name-and-date ps-3">
+              <b class="poster-name d-block">Åge Bakken</b>
+              <span class="publish-date d-block secoundary-text-color"
+                >2 Years ago</span
+              >
+            </div>
+          </div>
+          <div class="post-content pt-3">
+            <p>
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+              erat, sed diam voluptua. At vero eos et accusam et justo duo
+              dolores et ea rebum.
+            </p>
+          </div>
+          <div class="post-interactions row align-items-center text-center">
+            <div class="col-4 post-like">
+              <input
+                type="checkbox"
+                name=""
+                id="post-2-like-check"
+                class="d-none"
+              />
+              <label
+                for="post-2-like-check"
+                class="post-interactions-button d-block"
+              >
+                <i class="fa-solid fa-thumbs-up"></i>
+                <span class="number-of-likes align-items-center">10</span>
+              </label>
+            </div>
+            <div class="col-4 post-comment d-flex justify-content-center">
+              <i
+                class="fa-solid fa-comment-dots post-interactions-button d-block"
+              ></i>
+              <span class="number-of-comments text-center ps-1">100</span>
+            </div>
+            <div class="col-4 post-share">
+              <i
+                class="fa-solid fa-share-nodes post-interactions-button d-block"
+              ></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="container post-wrapper my-3 p-3">
+          <div class="poster-information d-flex align-items-center">
+            <div href="#" class="image-container">
+              <img src="images/face.jpg" alt="" class="profile-picture" />
+            </div>
+            <div class="name-and-date ps-3">
+              <b class="poster-name d-block">Sarah Tullebokk</b>
+              <span class="publish-date d-block secoundary-text-color"
+                >2 days ago</span
+              >
+            </div>
+          </div>
+          <div class="post-content pt-3">
+            <p>
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+              erat, sed diam voluptua. At vero eos et accusam et justo duo
+              dolores et ea rebum.
+            </p>
+          </div>
+          <div class="post-interactions row align-items-center text-center">
+            <div class="col-4 post-like">
+              <input
+                type="checkbox"
+                name=""
+                id="post-2-like-check"
+                class="d-none"
+              />
+              <label
+                for="post-2-like-check"
+                class="post-interactions-button d-block"
+              >
+                <i class="fa-solid fa-thumbs-up"></i>
+                <span class="number-of-likes align-items-center">10</span>
+              </label>
+            </div>
+            <div class="col-4 post-comment d-flex justify-content-center">
+              <i
+                class="fa-solid fa-comment-dots post-interactions-button d-block"
+              ></i>
+              <span class="number-of-comments text-center ps-1">100</span>
+            </div>
+            <div class="col-4 post-share">
+              <i
+                class="fa-solid fa-share-nodes post-interactions-button d-block"
+              ></i>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
+
+    <footer class="fixed-bottom">
+      <nav class="footer-nav d-md-none">
+        <div class="container">
+          <div class="col-3 d-block text-center">
+            <a href="index.html" class="footer-icon-wrapper d-block">
+              <i class="fa-solid fa-house"></i>
+            </a>
+          </div>
+          <div class="col-3 d-block text-center">
+            <a href="#" class="footer-icon-wrapper d-block">
+              <i class="fa-solid fa-circle-plus"></i>
+            </a>
+          </div>
+          <div class="col-3 d-block text-center">
+            <a href="#" class="footer-icon-wrapper d-block">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </a>
+          </div>
+          <div class="col-3 d-block text-center">
+            <a href="#" class="footer-icon-wrapper d-block">
+              <i class="fa-solid fa-bell nav-icon"></i>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </footer>
   </body>
 </html>
