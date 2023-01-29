@@ -1,0 +1,11 @@
+@import "variables";
+
+nav {
+  height: 100px;
+  width: 100%;
+  background-color: #181a1c;
+}
+
+nav a {
+  color: $primary-text-color;
+}

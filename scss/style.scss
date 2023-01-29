@@ -1,0 +1,64 @@
+@import "nav";
+@import "variables";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+main {
+  background-color: $primary-background-color;
+  color: $primary-text-color;
+}
+
+.about-user {
+  background-color: $secondary-background-color;
+}
+
+.banner {
+  width: 100%;
+  height: 200px;
+  background-color: red;
+  background: url(../Images/banner.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  aspect-ratio: 1 / 1;
+}
+
+.image-container {
+  height: 100px;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+}
+
+.profile-picture {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.send-message-icon {
+  background-color: $tertiary-background-color;
+  width: 50px;
+  aspect-ratio: 1 / 1;
+}
+
+.send-message-icon {
+  position: relative;
+  border-radius: 50%;
+  // margin: 0 auto;
+}
+
+.fa-message {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
