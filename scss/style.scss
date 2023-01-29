@@ -1,5 +1,6 @@
 @import "nav";
 @import "variables";
+@import "../node_modules/bootstrap/scss/bootstrap";
 
 * {
   margin: 0;
@@ -9,12 +10,22 @@
 
 html,
 main {
-  background-color: $primary-background-color;
+  color: $primary-text-color;
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+main {
+  margin-top: calc(84px + 16px + 14px);
+}
+
+button {
+  border: none;
   color: $primary-text-color;
 }
 
 .about-user {
   background-color: $secondary-background-color;
+  border-radius: 0 0 20px 20px;
 }
 
 .banner {
@@ -29,11 +40,14 @@ main {
 }
 
 .image-container {
-  height: 100px;
   aspect-ratio: 1 / 1;
   border-radius: 50%;
   position: relative;
   overflow: hidden;
+}
+
+.about-user .image-container {
+  height: 100px;
 }
 
 .profile-picture {
@@ -53,7 +67,6 @@ main {
 .send-message-icon {
   position: relative;
   border-radius: 50%;
-  // margin: 0 auto;
 }
 
 .fa-message {
@@ -61,4 +74,73 @@ main {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+}
+
+.follow-button {
+  width: 200px;
+  height: 35px;
+  border-radius: 20px;
+}
+
+.searchbar-container {
+  background-color: $bg-secondary;
+  border-radius: 20px;
+}
+
+.searchbar a {
+  aspect-ratio: 1 / 1;
+  height: 70px;
+  overflow: hidden;
+}
+
+.searchbar div {
+  height: 70px;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  position: relative;
+}
+
+.searchbar div img {
+  position: absolute;
+  width: 100%;
+}
+
+#post-message {
+  height: 35px;
+  background-color: $tertiary-background-color;
+  outline: none;
+  border: none;
+  border-radius: 40px;
+  color: $primary-text-color;
+  resize: both;
+}
+
+#post-message::placeholder {
+  color: $primary-text-color;
+}
+
+.footer-nav {
+  height: 1000px;
+}
+
+.nav-icon {
+  color: white;
+}
+
+footer nav div {
+  height: 100%;
+  line-height: 100px;
+  display: flex;
+}
+
+.footer-icon-wrapper {
+  background-color: red;
+  width: 100%;
+  display: block;
+}
+
+.nav-icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
